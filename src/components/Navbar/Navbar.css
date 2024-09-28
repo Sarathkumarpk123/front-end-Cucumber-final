@@ -1,0 +1,139 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f2f3;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li.active, .navbar-menu li:hover {
+    color: #007bff;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #0056b3;
+}
+
+.imageprofile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageprofile:hover {
+    transform: scale(1.1);
+}
+
+.navbar-profile {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.nav-profile-dropdown hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-profile-dropdown li {
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-profile-dropdown li:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.imageicon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Show dropdown when state is active */
+.navbar-profile .nav-profile-dropdown {
+    opacity: 1;
+    transform: scale(1);
+}
+.cart-count {
+    background-color: #ff6f61; /* A red or prominent color to highlight the count */
+    color: white; /* Text color */
+    border-radius: 50%; /* Makes the badge circular */
+    width: 25px; /* Fixed width for consistency */
+    height: 25px; /* Fixed height for consistency */
+    display: flex; /* Center the text inside */
+    justify-content: center; /* Align text horizontally */
+    align-items: center; /* Align text vertically */
+    font-size: 14px; /* Font size for the count */
+    font-weight: bold; /* Make the number stand out */
+    position: relative; /* To position it relative to other elements like a cart icon */
+    top: -10px; /* Adjust this based on where you want to position the badge */
+    right: -10px; /* Adjust this based on where you want to position the badge */
+  }
+  .navbar span{
+    cursor: pointer;
+  }
